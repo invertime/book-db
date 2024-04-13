@@ -19,7 +19,7 @@ jobs:
       run: sudo apt-get install -y libgtk-3-dev
 
     - name: Install glib
-      run: sudo apt0get install libglib
+      run: sudo apt-get install -y libglib
 
     - name: Install dependencies
       run: make
