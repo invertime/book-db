@@ -1,7 +1,7 @@
 # book-db
 
 A work in progress simple book database in C.
-Uses [gtk](https://www.gtk.org/).
+Uses [gtk](https://www.gtk.org/) and [mongodb](https://www.mongodb.com/).
 
 # Development
 
