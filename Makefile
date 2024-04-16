@@ -7,9 +7,11 @@ TARGET := bin/runner	# Final binary
 SRCEXT := c
 SOURCES := $(shell find $(SRCDIR) -type f -name *.$(SRCEXT))
 OBJECTS := $(patsubst $(SRCDIR)/%,$(BUILDDIR)/%,$(SOURCES:.$(SRCEXT)=.o))
-CFLAGS := `pkg-config --cflags gtk+-3.0` -g -Wall -Wextra # -Werror
-LIB := `pkg-config --libs gtk+-3.0` -L lib
+CFLAGS := `pkg-config --cflags gtk4` `pkg-config --cflags libmongoc-1.0` -g -Wall -Wextra # -Werror
+LIB := `pkg-config --libs gtk4` `pkg-config --libs libmongoc-1.0` -L lib
 INC := -I include
+
+$(pkg-config --libs --cflags libmongoc-1.0)
 
 $(TARGET): $(OBJECTS)
 	@echo " Linking..."

@@ -2,4 +2,11 @@
     "editor.detectIndentation": false,
     "editor.insertSpaces": true,
     "editor.tabSize": 4,
+    "C_Cpp.default.compilerPath": "/usr/bin/gcc",
+    "files.associations": {
+        "gtk.h": "c",
+        "gsk.h": "c",
+        "gskrenderer.h": "c",
+        "gsktypes.h": "c"
+    },
 }
